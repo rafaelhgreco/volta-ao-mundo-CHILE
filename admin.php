@@ -28,4 +28,6 @@ $comments = get_comments(false);
             </form>
         </li>
     <?php endforeach; ?>
+    
 </ul>
+<button class="nav-item"><a class="nav-link btn btn-primary text-white" href="import.php">Enviar arquivo JSON</a></button>

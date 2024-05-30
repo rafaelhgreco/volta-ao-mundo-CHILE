@@ -37,13 +37,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           <li class="nav-item"><a class="nav-link btn btn-secondary text-white" href="index.html">Voltar ao Início</a></li>
           <li>ㅤ</li>
           <li class="nav-item"><a class="nav-link btn btn-secondary text-white" href="register.php">Criar nova conta</a></li>
+          <li>ㅤ</li>
+          <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="admin.php">Área adminstrativa</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <main class="container mt-5">
-    <h2 style="color:#101010;">Realizar login para fazer um comentário...</h2>
+    <h2 style="color:#101010;">Realizar login</h2>
     <form method="post" action="loginUser.php" style="border: 1px solid#101010; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
       <div class="form-group">
         <label for="username">Email:</label>
