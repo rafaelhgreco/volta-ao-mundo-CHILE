@@ -1,20 +1,3 @@
-<?php
-require_once 'functions.php';
-
-session_start();
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $user_id = login_user($username, $password);
-    if ($user_id) {
-        $_SESSION['user_id'] = $user_id;
-        header('Location: acoes.php');
-    } else {
-        echo 'Invalid credentials';
-    }
-}
-?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -32,27 +15,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link btn btn-secondary text-white" href="index.html">Voltar ao Início</a></li>
-        </ul>
-      </div>
     </nav>
   </header>
 
   <main class="container mt-5">
-    <h2 style="color:#101010;">Realizar login</h2>
-    <form method="post" action="loginUser.php" style="border: 1px solid#101010; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-      <div class="form-group">
-        <label for="username">Email:</label>
-        <input type="username" class="form-control" name="username" placeholder="Digite seu email" required>
-      </div>
-      <div class="form-group">
-        <label for="password">Senha:</label>
-        <input type="password" class="form-control" name="password" placeholder="Digite sua senha" required>
-      </div>
-      <button type="submit" class="btn btn-primary">Entrar</button>
-    </form>
+    
+    <div class="container mt-5" style="border: 1px solid#101010; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2 class="row justify-content-center" style="color:#101010;">Ações</h2><br><br><br>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="custom-menu d-flex justify-content-between">
+                    <a class="btn btn-secondary text-white" href="comment.php">Enviar um comentário</a>
+                    <a>ㅤ</a>
+                    <a class="btn btn-secondary text-white" href="register.php">Criar nova conta</a>
+                    <a>ㅤ</a>
+                    <a class="btn btn-primary text-white" href="admin.php">Área administrativa</a>
+                    <a>ㅤ</a>
+                    <a class="btn btn-secondary text-white" href="index.html">Voltar ao Início</a>
+                </div>
+            </div>
+        </div>
+    </div>
   </main>
 
   <footer class="bg-light text-center text-lg-start mt-5">
@@ -71,3 +54,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
