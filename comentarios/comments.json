@@ -1,6 +1,43 @@
 [
     {
         "user_id": 1,
-        "content": "This is the first comment."
+        "content": "A gastronomia chilena é incrível! Recomendo experimentar o pastel de choclo."
+    },
+    {
+        "user_id": 1,
+        "content": "Santiago é uma cidade vibrante com muitas atrações culturais. O Museu de Arte Precolombina é imperdível!"
+    },
+    {
+        "user_id": 1,
+        "content": "Os vinhos chilenos são alguns dos melhores do mundo. A vinícola Concha y Toro oferece tours maravilhosos."
+    },
+    {
+        "user_id": 1,
+        "content": "A Patagônia chilena é um dos lugares mais bonitos que já visitei. As paisagens são de tirar o fôlego."
+    },
+    {
+        "user_id": 1,
+        "content": "Valparaíso é uma cidade encantadora com suas colinas coloridas e arte de rua. Ótimo lugar para passear e fotografar."
+    },
+    {
+        "user_id": 1,
+        "content": "A Ilha de Páscoa é fascinante com seus moais misteriosos e paisagens deslumbrantes. Uma experiência única!"
+    },
+    {
+        "user_id": 1,
+        "content": "Se você gosta de frutos do mar, não pode deixar de experimentar a centolla em Punta Arenas. Deliciosa!"
+    },
+    {
+        "user_id": 1,
+        "content": "O deserto do Atacama oferece uma experiência surreal. As formações rochosas e o céu estrelado são inesquecíveis."
+    },
+    {
+        "user_id": 1,
+        "content": "A cultura mapuche é muito rica e interessante. Vale a pena aprender mais sobre suas tradições e artesanato."
+    },
+    {
+        "user_id": 1,
+        "content": "Puerto Varas é uma cidade charmosa com influências alemãs. As paisagens ao redor do Lago Llanquihue são espetaculares."
     }
 ]
+

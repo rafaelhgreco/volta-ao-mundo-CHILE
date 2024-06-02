@@ -96,7 +96,7 @@ $hidden_comments = get_hidden_comments();
                     <td>
                         <form method="post" action="admin.php">
                             <input type="hidden" name="comment_id" value="<?php echo $comment['id']; ?>">
-                            <button type="submit" name="hide" value="true">Rejeitar</button>
+                            <button type="submit" name="hide" value="true">Remover</button>
                         </form>
                     </td>
                 </tr>
