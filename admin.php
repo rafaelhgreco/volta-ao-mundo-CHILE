@@ -44,6 +44,8 @@ $hidden_comments = get_hidden_comments();
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="import.php">Enviar arquivo JSON</a></li>
+          <li>ㅤ</li>
           <li class="nav-item"><a class="nav-link btn btn-secondary text-white" href="index.php">Voltar ao Início</a></li>
         </ul>
       </div>
@@ -94,7 +96,6 @@ $hidden_comments = get_hidden_comments();
                     <td>
                         <form method="post" action="admin.php">
                             <input type="hidden" name="comment_id" value="<?php echo $comment['id']; ?>">
-                            <button type="submit" name="approve" value="true">Postar</button>
                             <button type="submit" name="hide" value="true">Rejeitar</button>
                         </form>
                     </td>
@@ -128,9 +129,7 @@ $hidden_comments = get_hidden_comments();
         </tbody>
       </table><br><br>
       
-      <button class="btn btn-primary">
-        <a class="nav-link btn btn-primary text-white" href="import.php">Enviar arquivo JSON</a>
-      </button>
+
 
       </div>
     </div>  
