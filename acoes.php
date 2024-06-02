@@ -11,7 +11,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a style="color:red" class="navbar-brand" href="index.html"><img style="width: 35px; margin-bottom: 4px;" src="img/cl.jpg"><label style="margin-left: 10px;">Chile</label></a>
+        <a style="color:red" class="navbar-brand" href="index.php"><img style="width: 35px; margin-bottom: 4px;" src="img/cl.jpg"><label style="margin-left: 10px;">Chile</label></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -31,7 +31,7 @@
                     <a>ㅤ</a>
                     <a class="btn btn-primary text-white" href="admin.php">Área administrativa</a>
                     <a>ㅤ</a>
-                    <a class="btn btn-secondary text-white" href="index.html">Voltar ao Início</a>
+                    <a class="btn btn-secondary text-white" href="index.php">Voltar ao Início</a>
                 </div>
             </div>
         </div>

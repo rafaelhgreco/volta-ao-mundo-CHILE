@@ -26,10 +26,10 @@ function post_comment($user_id, $content) {
     $stmt->execute(['user_id' => $user_id, 'content' => $content]);
 }
 
-function get_comments($approved = true) {
+function get_unapproved_visible_comments() {
     global $pdo;
-    $stmt = $pdo->prepare('SELECT * FROM comments WHERE approved = :approved');
-    $stmt->execute(['approved' => $approved]);
+    $stmt = $pdo->prepare('SELECT * FROM comments WHERE approved = false AND hidden = false ORDER BY created_at DESC');
+    $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
@@ -37,5 +37,25 @@ function approve_comment($comment_id, $approve) {
     global $pdo;
     $stmt = $pdo->prepare('UPDATE comments SET approved = :approved WHERE id = :id');
     $stmt->execute(['approved' => $approve, 'id' => $comment_id]);
+}
+
+function get_approved_comments() {
+    global $pdo;
+    $stmt = $pdo->prepare('SELECT * FROM comments WHERE approved = true ORDER BY created_at DESC');
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function hide_comment($comment_id, $hide) {
+    global $pdo;
+    $stmt = $pdo->prepare('UPDATE comments SET hidden = :hidden, approved = :approved WHERE id = :id');
+    $stmt->execute(['hidden' => $hide, 'approved' => !$hide ? 1 : 0, 'id' => $comment_id]);
+}
+
+function get_hidden_comments() {
+    global $pdo;
+    $stmt = $pdo->prepare('SELECT * FROM comments WHERE hidden = true ORDER BY created_at DESC');
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 ?>

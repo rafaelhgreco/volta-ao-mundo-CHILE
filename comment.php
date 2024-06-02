@@ -28,13 +28,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a style="color:red" class="navbar-brand" href="index.html"><img style="width: 35px; margin-bottom: 4px;" src="img/cl.jpg"><label style="margin-left: 10px;">Chile</label></a>
+        <a style="color:red" class="navbar-brand" href="index.php"><img style="width: 35px; margin-bottom: 4px;" src="img/cl.jpg"><label style="margin-left: 10px;">Chile</label></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link btn btn-secondary text-white" href="index.html">Voltar ao Início</a></li>
+          
         </ul>
       </div>
     </nav>
@@ -49,6 +49,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
+    <div class="container mt-5 row justify-content-center">
+    <button class="btn btn-secondary"><a class="text-white" href="acoes.php">Voltar</a></button>
+    </div>
     </div>
   </main>
 
