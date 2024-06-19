@@ -14,3 +14,15 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .custom-img {
+    width: 100%;
+    max-width: 400px; /* Ajuste a largura conforme necessário */
+    height: 300px; /* Altura fixa */
+    object-fit: cover; /* Mantém a proporção da imagem e cobre todo o espaço */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  }
+  .text-justify {
+    text-align: justify;
+  }
