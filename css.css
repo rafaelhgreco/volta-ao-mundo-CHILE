@@ -1,0 +1,39 @@
+.highlight-text {
+    background-color: #24292F; /* Fundo preto */
+    color: white;            /* Texto branco */
+    padding: 10px;           /* Espaçamento interno */
+    display: inline-block; 
+    opacity: 100%;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .carousel-item img {
+    width: 1080px; 
+    height: 720px; 
+    object-fit: cover; 
+  }
+  .carousel-inner {
+    text-align: center;
+  }
+
+  .tam-img{
+    width: 500px; 
+    height: 250px; 
+    object-fit: cover; 
+  }
+
+  .custom-img {
+    width: 100%;
+    max-width: 400px; /* Ajuste a largura conforme necessário */
+    height: 300px; /* Altura fixa */
+    object-fit: cover; /* Mantém a proporção da imagem e cobre todo o espaço */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  }
+  .text-justify {
+    text-align: justify;
+  }
+  .section-btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
