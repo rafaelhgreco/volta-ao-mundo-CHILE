@@ -68,7 +68,7 @@ Implementamos medidas de segurança robustas para proteger as informações dos 
 - Parser para processar e salvar os comentários no banco de dados.
 
 ## Tecnologias Utilizadas
-- **Front-end**: HTML e Bootstrap.
+- **Front-end**: HTML, Bootstrap e JavaScript.
 - **Back-end**: PHP.
 
 ## Autores

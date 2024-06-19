@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Turismo no Chile</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/custom.css" rel="stylesheet">
+  <link href="csspage.css" rel="stylesheet">
+  <link rel="stylesheet" href="head.css">
 </head>
 <body>
-  <header>
+  <header id="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a style="color:red" class="navbar-brand" href="index.php"><img style="width: 35px;margin-bottom: 4px;" src="img/cl.jpg"><label style="margin-left: 10px;">Chile</label></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,20 +24,38 @@
   </header>
 
   <main class="container mt-5">
+    
     <h1>Turismo no Chile</h1>
-    <p>Explore os destinos turísticos mais populares do Chile.</p>
-    <div class="row">
-      <div class="col-md-4">
-        <img src="img/turismo/local1.jpg" class="img-fluid" alt="Local turístico 1">
-        <h3>Parque Nacional Lauca</h3>
-        <p>Situado no norte do Chile, oferece paisagens marcadas por vulcões, lagos de alta altitude e uma rica fauna andina.</p>
+    <h4>Introdução ao Turismo no Chile</h4>
+    <p>O Chile é um país de contrastes extremos, oferecendo uma variedade impressionante de paisagens que vão desde os desertos mais secos do mundo até geleiras imponentes e exuberantes florestas temperadas. Esta diversidade faz do Chile um destino turístico ideal para aventureiros, amantes da natureza e entusiastas da cultura. Explorando suas diversas regiões, os visitantes podem descobrir a rica história e cultura do país, bem como suas maravilhas naturais.</p>
+    <br>
+    <strong>Destinos Principais</strong>
+    <div class="container container-custom">
+      <div class="row row-custom">
+        <div class="col-md-6 mb-4">
+          <img src="img/turismo/local1.jpg" class="img-fluid" alt="Local turístico 1">
+          <h3>Deserto do Atacama</h3>
+          <p>Conhecido como o deserto mais seco do mundo, oferece paisagens surreais como o Vale da Lua, gêiseres de El Tatio e lagos altiplânicos.</p>
+        </div>
+  
+        <div class="col-md-6 mb-4">
+          <img src="img/turismo/local2.jpg" class="img-fluid" alt="Local turístico 2">
+          <h3>Patagônia Chilena</h3>
+          <p>Lar do Parque Nacional Torres del Paine, famoso por suas montanhas escarpadas, lagos azul-turquesa e trilhas desafiadoras.</p>
+        </div>
+  
+        <div class="col-md-6 mb-4">
+          <img src="img/turismo/local2.jpg" class="img-fluid" alt="Local turístico 2">
+          <h3>Ilha de Páscoa</h3>
+          <p>Famosa por suas misteriosas estátuas moai e rica história polinésia.</p>
+        </div>
+  
+        <div class="col-md-6 mb-4">
+          <img src="img/turismo/local2.jpg" class="img-fluid" alt="Local turístico 2">
+          <h3>Valle de Colchagua</h3>
+          <p>Uma das regiões vinícolas mais importantes do Chile, conhecida por seus vinhedos e vinícolas de classe mundial.</p>
+        </div>
       </div>
-      <div class="col-md-4">
-        <img src="img/turismo/local2.jpg" class="img-fluid" alt="Local turístico 2">
-        <h3>Santiago</h3>
-        <p>A capital chilena é um hub de cultura, gastronomia e história, com uma mistura vibrante de modernidade e tradições.</p>
-      </div>
-      <!-- Adicione mais locais turísticos conforme necessário -->
     </div>
   </main>
 
@@ -54,5 +73,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

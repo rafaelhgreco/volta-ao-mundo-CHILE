@@ -24,6 +24,7 @@ function format_date_pt_br($date) {
   <title>Chile: Turismo, Cultura e Gastronomia</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="head.css">
 </head>
 <body>
   <header id="header">
@@ -193,16 +194,7 @@ function format_date_pt_br($date) {
         }
       });
     });
-    window.addEventListener('scroll', function() {
-    const header = document.getElementById('header');
-    const sticky = header.offsetTop;
-
-    if (window.pageYOffset > sticky) {
-        header.classList.add('sticky');
-    } else {
-        header.classList.remove('sticky');
-    }
-});
   </script>
+  <script src="script.js"></script>
 </body>
 </html>
