@@ -87,12 +87,12 @@ function format_date_pt_br($date) {
       <h2 class="text-center">Turismo</h2>
       <br>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <img src="img/turismo/local1.jpg" class="custom-img" alt="Local turístico 1">
           <h3 class="text-center">Parque Nacional Lauca</h3>
           <p class="text-justify">Situado no norte do Chile, oferece paisagens marcadas por vulcões, lagos de alta altitude e uma rica fauna andina.</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <img src="img/turismo/local2.jpg" class="custom-img" alt="Local turístico 2">
           <h3 class="text-center">Santiago</h3>
           <p class="text-justify">A capital chilena é um hub de cultura, gastronomia e história, com uma mistura vibrante de modernidade e tradições.</p>
